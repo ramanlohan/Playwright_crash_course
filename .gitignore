@@ -1,0 +1,8 @@
+
+# Playwright
+/PLAYWRIGHTAUTOMATION/node_modules/
+/PLAYWRIGHTAUTOMATION/test-results/
+/PLAYWRIGHTAUTOMATION/playwright-report/
+/PLAYWRIGHTAUTOMATION/blob-report/
+/PLAYWRIGHTAUTOMATION/playwright/.cache/
+/PLAYWRIGHTAUTOMATION/playwright/.auth/
