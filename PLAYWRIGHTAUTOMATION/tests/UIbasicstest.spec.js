@@ -17,3 +17,5 @@ test('easy test',async ({page})=>{
  console.log(await page.title());
  await expect(page).toHaveTitle("Google");
 });
+// today's  progress was wiped clean because of unknowingly pulling the main branch from origin while it was not
+// in sync with my local branch.
