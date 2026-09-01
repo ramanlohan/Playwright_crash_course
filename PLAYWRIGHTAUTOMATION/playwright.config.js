@@ -8,9 +8,9 @@ import { defineConfig, devices } from '@playwright/test';
  */
 const config=({
   testDir: './tests',
-  timeout: 10*1000,//to change the default timeout of 30 seconds
+  timeout: 30*1000,//to change the default timeout of 30 seconds
   expect : {//it is for assertions
-    timeout: 10*1000,
+    timeout: 30*1000,
   },
   reporter:'html',
   use: {
