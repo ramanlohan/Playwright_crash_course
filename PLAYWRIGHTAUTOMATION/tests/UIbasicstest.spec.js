@@ -15,14 +15,17 @@ test('easy test',async ({page})=>{
  console.log(await page.title());
  await expect(page).toHaveTitle("Google");
 });
-test.only("sign in test",async({page})=>{
+test("sign in test",async({page})=>{
+    const cardTitles = page.locator(".card-body a");
 await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
 await page.locator("input[value='user']").click();
 await page.locator("#okayBtn").click();
-await page.locator("#name").fill("Ramandeep Lohan");
-await page.locator("#email").fill("ramandeeplohan@gmail.com");
+await page.locator("#username").fill("rahulshettyacademy");
 await page.locator("#password").fill("Learning@830$3mK2");
 await page.locator("#terms").click();
 await page.locator("#signInBtn").click();
-await expect(page.locator(".card-title a").toHaveTitle("iphone X"))
+console.log( await cardTitles.nth(0).textContent());
+ await cardTitles.nth(1);
+ const allTitles = await cardTitles.allTextContents();//it can return 0 elements too as its a array
+ console.log(allTitles);
 })
