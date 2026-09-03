@@ -12,7 +12,7 @@ const allTitles =await page.locator(".card-body b").allTextContents();
 });
 // there are two types of dropdown 
 // one is where elements are already there they are called select dropdowns
-test.only("ui controls",async({page})=>{
+test("ui controls",async({page})=>{
 await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
 await page.locator("input[value='user']").click();
 await page.locator("#okayBtn").click();
